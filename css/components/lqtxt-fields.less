@@ -1,0 +1,311 @@
+// ===============================================================
+// LqTxt default form fields
+// ===============================================================
+
+// General Styles ===================================
+
+.lqtxt-field
+{
+  margin-bottom: @lqtxt-margin-4;
+  width: 100%;
+  max-width: 540px;
+}
+
+.lqtxt-field-label
+{
+  display: block;
+  margin-bottom: @lqtxt-margin-1;
+  .lqtxt-text-instruction;
+}
+
+.lqtxt-field-input
+{
+  display: block;
+  padding: @lqtxt-padding-2;
+  background-color: @lqtxt-light;
+  width: 100%;
+  border: none;
+  .lqtxt-text-normal;
+
+}
+
+.lqtxt-field-input--small {
+  padding: @lqtxt-padding-1 @lqtxt-padding-2;
+}
+
+// Select Specific ============================
+
+.lqtxt-field-input-select-wrapper
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  &:after
+  {
+    content: "\f0d7";
+    position: absolute;
+    right: @lqtxt-padding-3;
+    .fa;
+    pointer-events: none;
+  }
+}
+
+.lqtxt-field-input-select-wrapper--small:after {
+}
+
+.lqtxt-field-input-select
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+
+  &:hover { cursor: pointer; }
+}
+
+.lqtxt-field-input-text,
+.lqtxt-field-input-select,
+.lqtxt-field-input-textarea
+{
+  &:focus
+  {
+    outline:none;
+
+  }
+}
+
+// Checkbox (singular) ===================================
+.lqtxt-field-input-checkbox-indicator
+{
+  display: inline-block;
+  vertical-align: top;
+  height: 21px;
+  width: 21px;
+  border: 1px solid @lqtxt-dark;
+  &:hover{ cursor: pointer; }
+}
+
+.lqtxt-field-input-checkbox:checked + .lqtxt-field-input-checkbox-indicator
+{
+  background: @lqtxt-primary;
+  border-color: @lqtxt-primary;
+  border-width: 6px;
+
+}
+
+.lqtxt-field-input-checkbox
+{
+  display: inline;
+  max-width: 21px; //Match it to our indicator box;
+  visibility: hidden;
+  position: absolute;
+  //&:checked + .lqtxt-field-input-checkbox-indicator
+
+}
+
+// Checkboxes (collection) ===================================
+
+.lqtxt-checkbox-choice
+{
+  label {
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+  }
+}
+
+.lqtxt-form-checkbox
+{
+  position: relative;
+  padding: @lqtxt-padding-2 0 @lqtxt-padding-2 @lqtxt-padding-2;
+
+  &:nth-child(even)
+  {
+    background-color: @lqtxt-lighter;
+  }
+
+  &-label
+  {
+    color: @lqtxt-dark;
+
+    &:hover
+    {
+      cursor: pointer;
+    }
+  }
+
+  &-input
+  {
+    margin-right: @lqtxt-margin-2;
+    opacity: 0;
+    z-index: -1;
+
+    &:checked ~ .lqtxt-form-checkbox-indicator
+    {
+      background: @lqtxt-primary;
+      border-color: @lqtxt-primary;
+      border-width: 6px;
+    }
+  }
+
+  &-indicator
+  {
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    height: 21px;
+    width: 21px;
+    left: 0;
+    margin-left: @lqtxt-margin-2;
+    border: 1px solid @lqtxt-dark;
+    &:hover { cursor: pointer; }
+  }
+}
+
+// Tags ========================================
+.lqtxt-field-tags .lqtxt-tags
+{
+  position: relative;
+  .lqtxt-field-input { position: relative; }
+  .lqtxt-tag-add
+  {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: @lqtxt-padding-2;
+    color: @lqtxt-dark;
+    text-decoration: none;
+    line-height: 28px;
+    &:hover { color: @lqtxt-primary; }
+  }
+  .lqtxt-tag-remove
+  {
+    color: @lqtxt-mid;
+    text-decoration: none;
+    &:hover { color: @lqtxt-delete; }
+  }
+  .lqtxt-tag-list
+  {
+    position: relative;
+    padding: @lqtxt-padding-1 @lqtxt-padding-2;
+    background-color: fade(@lqtxt-light, 50%);
+    &.lqtxt-empty { display: none; }
+    &.ui-sortable
+    {
+      .lqtxt-tag-list-item
+      {
+        cursor: -webkit-grab;
+        cursor: grab;
+        &.ui-sortable-helper
+        {
+          cursor: -webkit-grabbing;
+          cursor: grabbing;
+        }
+      }
+      .ui-sortable-placeholder
+      {
+        visibility: visible !important;
+        height: 38px;
+        width: 100px;
+        display: inline-block;
+        border: 1px dashed @lqtxt-base;
+        background-color: fade(@lqtxt-base, 50%);
+        transform: translateY(30%);
+      }
+    }
+  }
+  .lqtxt-tag-list-item
+  {
+    // .lqtxt-inline-block;
+    display: inline;
+    margin-top: 6px;
+    &:not(:first-of-type) { margin-left: 10px; }
+  }
+  .lqtxt-tag-entry
+  {
+    .lqtxt-text-normal;
+    line-height: 38px;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed @lqtxt-primary;
+  }
+}
+
+// Colorpicker ===================================
+.lqtxt-field-color {
+  position: relative;
+  max-width: 260px;
+
+  .sp-replacer {
+    position: absolute;
+    opacity: 0;
+    background-color: transparent;
+    padding: 16px 10px 18px 60px;
+    left: 0;
+    z-index: 2;
+  }
+}
+
+.lqtxt-field-input-colorpicker-value {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.lqtxt-field-input-color-value {
+  float: left;
+  margin: 20px 0px 0 20px
+}
+
+.lqtxt-field-input-color-preview {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.lqtxt-field-input-color-preview--empty {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQYV2NMKL/ty4ADMIIkF3SqbsYmP+gkAayXGgfe8HOVAAAAAElFTkSuQmCC);
+}
+
+.lqtxt-field-input-color {
+  width: 70px;
+  padding: 15px;
+  height: 60px;
+  float: left;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Range ===================================
+
+.lqtxt-field-input-range {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lqtxt-field-input-range-value {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.lqtxt-field-range .lqtxt-field-label {
+  display: inline-block;
+}
+
+// Browse and autocomplete combo
+.lqtxt-browse-and-autocomplete {
+  display: flex;
+  position: relative;
+  align-items: center;
+  .lqtxt-button {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+// Browse only
+.lqtxt-browse {
+  margin-bottom: 16px;
+}

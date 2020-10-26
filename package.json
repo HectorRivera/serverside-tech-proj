@@ -1,0 +1,27 @@
+{
+  "name": "less-proj",
+  "version": "1.0.0",
+  "description": "Project to test various ServerSide Technologies such as Less, mongodb, node, express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HectorRivera/serverside-tech-proj.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "LESS",
+    "Mongo",
+    "Apostrophe",
+    "CMS"
+  ],
+  "author": "Hector L. Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HectorRivera/serverside-tech-proj/issues"
+  },
+  "homepage": "https://github.com/HectorRivera/serverside-tech-proj#readme"
+}

@@ -1,0 +1,412 @@
+.lqtxt-ui {
+  /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+  /* HTML5 display-role reset for older browsers */
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+.lqtxt-ui div,
+.lqtxt-ui span,
+.lqtxt-ui applet,
+.lqtxt-ui object,
+.lqtxt-ui iframe,
+.lqtxt-ui h1,
+.lqtxt-ui h2,
+.lqtxt-ui h3,
+.lqtxt-ui h4,
+.lqtxt-ui h5,
+.lqtxt-ui h6,
+.lqtxt-ui p,
+.lqtxt-ui blockquote,
+.lqtxt-ui pre,
+.lqtxt-ui a,
+.lqtxt-ui abbr,
+.lqtxt-ui acronym,
+.lqtxt-ui address,
+.lqtxt-ui big,
+.lqtxt-ui cite,
+.lqtxt-ui code,
+.lqtxt-ui del,
+.lqtxt-ui dfn,
+.lqtxt-ui em,
+.lqtxt-ui img,
+.lqtxt-ui ins,
+.lqtxt-ui kbd,
+.lqtxt-ui q,
+.lqtxt-ui s,
+.lqtxt-ui samp,
+.lqtxt-ui small,
+.lqtxt-ui strike,
+.lqtxt-ui strong,
+.lqtxt-ui sub,
+.lqtxt-ui sup,
+.lqtxt-ui tt,
+.lqtxt-ui var,
+.lqtxt-ui b,
+.lqtxt-ui u,
+.lqtxt-ui i,
+.lqtxt-ui center,
+.lqtxt-ui dl,
+.lqtxt-ui dt,
+.lqtxt-ui dd,
+.lqtxt-ui ol,
+.lqtxt-ui ul,
+.lqtxt-ui li,
+.lqtxt-ui fieldset,
+.lqtxt-ui form,
+.lqtxt-ui label,
+.lqtxt-ui legend,
+.lqtxt-ui table,
+.lqtxt-ui caption,
+.lqtxt-ui tbody,
+.lqtxt-ui tfoot,
+.lqtxt-ui thead,
+.lqtxt-ui tr,
+.lqtxt-ui th,
+.lqtxt-ui td,
+.lqtxt-ui article,
+.lqtxt-ui aside,
+.lqtxt-ui canvas,
+.lqtxt-ui details,
+.lqtxt-ui embed,
+.lqtxt-ui figure,
+.lqtxt-ui figcaption,
+.lqtxt-ui footer,
+.lqtxt-ui header,
+.lqtxt-ui hgroup,
+.lqtxt-ui menu,
+.lqtxt-ui nav,
+.lqtxt-ui output,
+.lqtxt-ui ruby,
+.lqtxt-ui section,
+.lqtxt-ui summary,
+.lqtxt-ui time,
+.lqtxt-ui mark,
+.lqtxt-ui audio,
+.lqtxt-ui video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.lqtxt-ui article,
+.lqtxt-ui aside,
+.lqtxt-ui details,
+.lqtxt-ui figcaption,
+.lqtxt-ui figure,
+.lqtxt-ui footer,
+.lqtxt-ui header,
+.lqtxt-ui hgroup,
+.lqtxt-ui menu,
+.lqtxt-ui nav,
+.lqtxt-ui section {
+  display: block;
+}
+.lqtxt-ui body {
+  line-height: 1;
+}
+.lqtxt-ui ol,
+.lqtxt-ui ul {
+  list-style: none;
+}
+.lqtxt-ui blockquote,
+.lqtxt-ui q {
+  quotes: none;
+}
+.lqtxt-ui blockquote:before,
+.lqtxt-ui blockquote:after,
+.lqtxt-ui q:before,
+.lqtxt-ui q:after {
+  content: '';
+  content: none;
+}
+.lqtxt-ui table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.lqtxt-ui .lqtxt-text-title,
+.lqtxt-ui .lqtxt-text-instruction {
+  font-family: 'Karla', 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.lqtxt-ui .lqtxt-text-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+.lqtxt-ui .lqtxt-text-normal,
+.lqtxt-ui .lqtxt-text-small,
+.lqtxt-ui .lqtxt-text-meta {
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1px;
+}
+.lqtxt-ui .lqtxt-text-small {
+  font-size: 14px;
+  line-height: 18px;
+}
+.lqtxt-ui .lqtxt-text-meta {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+}
+.lqtxt-ui .fa {
+  font-family: "FontAwesome";
+}
+.lqtxt-ui .lqtxt-field {
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 540px;
+}
+.lqtxt-ui .lqtxt-field-label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Karla', 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.lqtxt-ui .lqtxt-field-input {
+  display: block;
+  padding: 20px;
+  background-color: #EEEEEE;
+  width: 100%;
+  border: none;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1px;
+}
+.lqtxt-ui .lqtxt-field-input--small {
+  padding: 10px 20px;
+}
+.lqtxt-ui .lqtxt-field-input-select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.lqtxt-ui .lqtxt-field-input-select-wrapper:after {
+  content: "\f0d7";
+  position: absolute;
+  right: 30px;
+  font-family: "FontAwesome";
+  pointer-events: none;
+}
+.lqtxt-ui .lqtxt-field-input-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+.lqtxt-ui .lqtxt-field-input-select:hover {
+  cursor: pointer;
+}
+.lqtxt-ui .lqtxt-field-input-text:focus,
+.lqtxt-ui .lqtxt-field-input-select:focus,
+.lqtxt-ui .lqtxt-field-input-textarea:focus {
+  outline: none;
+}
+.lqtxt-ui .lqtxt-field-input-checkbox-indicator {
+  display: inline-block;
+  vertical-align: top;
+  height: 21px;
+  width: 21px;
+  border: 1px solid #363B3B;
+}
+.lqtxt-ui .lqtxt-field-input-checkbox-indicator:hover {
+  cursor: pointer;
+}
+.lqtxt-ui .lqtxt-field-input-checkbox:checked + .lqtxt-field-input-checkbox-indicator {
+  background: #00BF9A;
+  border-color: #00BF9A;
+  border-width: 6px;
+}
+.lqtxt-ui .lqtxt-field-input-checkbox {
+  display: inline;
+  max-width: 21px;
+  visibility: hidden;
+  position: absolute;
+}
+.lqtxt-ui .lqtxt-checkbox-choice label {
+  width: 200px;
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+.lqtxt-ui .lqtxt-form-checkbox {
+  position: relative;
+  padding: 20px 0 20px 20px;
+}
+.lqtxt-ui .lqtxt-form-checkbox:nth-child(even) {
+  background-color: #fafafa;
+}
+.lqtxt-ui .lqtxt-form-checkbox-label {
+  color: #363B3B;
+}
+.lqtxt-ui .lqtxt-form-checkbox-label:hover {
+  cursor: pointer;
+}
+.lqtxt-ui .lqtxt-form-checkbox-input {
+  margin-right: 20px;
+  opacity: 0;
+  z-index: -1;
+}
+.lqtxt-ui .lqtxt-form-checkbox-input:checked ~ .lqtxt-form-checkbox-indicator {
+  background: #00BF9A;
+  border-color: #00BF9A;
+  border-width: 6px;
+}
+.lqtxt-ui .lqtxt-form-checkbox-indicator {
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+  height: 21px;
+  width: 21px;
+  left: 0;
+  margin-left: 20px;
+  border: 1px solid #363B3B;
+}
+.lqtxt-ui .lqtxt-form-checkbox-indicator:hover {
+  cursor: pointer;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags {
+  position: relative;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-field-input {
+  position: relative;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-add {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  color: #363B3B;
+  text-decoration: none;
+  line-height: 28px;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-add:hover {
+  color: #00BF9A;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-remove {
+  color: #D8D8D8;
+  text-decoration: none;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-remove:hover {
+  color: #EA433A;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-list {
+  position: relative;
+  padding: 10px 20px;
+  background-color: rgba(238, 238, 238, 0.5);
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-list.lqtxt-empty {
+  display: none;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-list.ui-sortable .lqtxt-tag-list-item {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-list.ui-sortable .lqtxt-tag-list-item.ui-sortable-helper {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-list.ui-sortable .ui-sortable-placeholder {
+  visibility: visible !important;
+  height: 38px;
+  width: 100px;
+  display: inline-block;
+  border: 1px dashed #00BF9A;
+  background-color: rgba(0, 191, 154, 0.5);
+  transform: translateY(30%);
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-list-item {
+  display: inline;
+  margin-top: 6px;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-list-item:not(:first-of-type) {
+  margin-left: 10px;
+}
+.lqtxt-ui .lqtxt-field-tags .lqtxt-tags .lqtxt-tag-entry {
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  text-transform: capitalize;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #00BF9A;
+}
+.lqtxt-ui .lqtxt-field-color {
+  position: relative;
+  max-width: 260px;
+}
+.lqtxt-ui .lqtxt-field-color .sp-replacer {
+  position: absolute;
+  opacity: 0;
+  background-color: transparent;
+  padding: 16px 10px 18px 60px;
+  left: 0;
+  z-index: 2;
+}
+.lqtxt-ui .lqtxt-field-input-colorpicker-value {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.lqtxt-ui .lqtxt-field-input-color-value {
+  float: left;
+  margin: 20px 0px 0 20px;
+}
+.lqtxt-ui .lqtxt-field-input-color-preview {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+.lqtxt-ui .lqtxt-field-input-color-preview--empty {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQYV2NMKL/ty4ADMIIkF3SqbsYmP+gkAayXGgfe8HOVAAAAAElFTkSuQmCC);
+}
+.lqtxt-ui .lqtxt-field-input-color {
+  width: 70px;
+  padding: 15px;
+  height: 60px;
+  float: left;
+}
+.lqtxt-ui .lqtxt-field-input-color:hover {
+  cursor: pointer;
+}
+.lqtxt-ui .lqtxt-field-input-range {
+  padding-left: 0;
+  padding-right: 0;
+}
+.lqtxt-ui .lqtxt-field-input-range-value {
+  display: inline-block;
+  margin-left: 10px;
+}
+.lqtxt-ui .lqtxt-field-range .lqtxt-field-label {
+  display: inline-block;
+}
+.lqtxt-ui .lqtxt-browse-and-autocomplete {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.lqtxt-ui .lqtxt-browse-and-autocomplete .lqtxt-button {
+  position: absolute;
+  right: 10px;
+}
+.lqtxt-ui .lqtxt-browse {
+  margin-bottom: 16px;
+}
